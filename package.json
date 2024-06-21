@@ -1,7 +1,7 @@
 {
   "name": "awww",
   "version": "0.0.2",
-  "repository": "https://github.com/dk-e/d-n",
+  "repository": "https://github.com/dk-e/awww",
   "author": "Dan <d@niel.lol>",
   "license": "MIT",
   "main": "./dist/index.js",
