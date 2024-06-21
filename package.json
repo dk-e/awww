@@ -9,6 +9,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup --minify --dts --format cjs,esm --out-dir dist",
+    "release": "pnpm run build && changeset publish",
     "lint": "tsc"
   },
   "exports": {
