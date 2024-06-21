@@ -1,0 +1,43 @@
+{
+  "name": "d-n",
+  "version": "0.0.1",
+  "repository": "https://github.com/dk-e/d-n",
+  "author": "Dan <d@niel.lol>",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup --minify --dts --format cjs,esm --out-dir dist",
+    "lint": "tsc"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    "./prettier": "./prettier/index.json",
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./id": {
+      "import": "./dist/id/index.js",
+      "require": "./dist/id/index.cjs"
+    }
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist",
+    "prettier",
+    "package.json"
+  ],
+  "keywords": [
+    "utilities",
+    "prettier",
+    "formatting"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.27.5",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.2"
+  }
+}
